@@ -1,0 +1,36 @@
+public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //DateTime myDate = DateTime.Now;
+
+            //ResultLabel.Content = myDate.ToString();
+
+            //ResultLabel.Content = myDate.ToLongDateString();
+
+            //ResultLabel.Content = myDate.ToLongTimeString();
+
+            //ResultLabel.Content = myDate.ToShortDateString();
+
+            //ResultLabel.Content = myDate.ToShortTimeString();
+
+            //ResultLabel.Content = myDate.AddDays(2).ToString();
+
+            //ResultLabel.Content = myDate.AddMonths(-2).ToString();
+
+            //ResultLabel.Content = myDate.IsDaylightSavingTime().ToString();
+
+            //DateTime myDate = DateTime.Parse("12/09/1963");
+
+            DateTime myDate = new DateTime(1963, 12, 9, 9,);
+            ResultLabel.Content = myDate.ToString();
+        
+        
+        }
+    }
+}
