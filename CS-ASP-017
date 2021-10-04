@@ -1,0 +1,47 @@
+ public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        // Instantiate two Date Time Variables
+
+        public DateTime myFirstDate, mySecondDate;
+
+       
+        // Get First Date
+
+        
+        public void myCalender_SelectedDatesChanged(Object sender, SelectionChangedEventArgs e)
+        {
+
+            myFirstDate = myCalender.SelectedDate.Value;
+        
+        
+        
+        }
+
+
+        public void mySecondCalender_SelectedDatesChanged(object sended, RoutedEventArgs e)
+        {
+            mySecondDate = mySecondCalender.SelectedDate.Value;
+        
+        }
+       
+        // Call Black Out Method    
+            private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            SetBlackOutDates(myFirstDate, mySecondDate);
+        
+        }
+
+        private void SetBlackOutDates(DateTime myFirstDate, DateTime mySecondDate)
+        {
+            BlackOutCalender.BlackoutDates.Add(new CalendarDateRange(myFirstDate, mySecondDate)); ;
+
+        }
+
+    }
+}
