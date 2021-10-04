@@ -1,1 +1,12 @@
 
+        private void myCalender_SelectedDatesChanged(Object sender, SelectionChangedEventArgs e)
+        {
+
+            resultLabel.Content = myCalender.SelectedDate.ToString();
+        
+        
+        
+        
+        
+                }
+
