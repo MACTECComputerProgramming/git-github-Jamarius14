@@ -1,0 +1,22 @@
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //string result = string.Format("Thank you, {0} for your business!", Textbox1.Text);
+
+            //string result = string.Format("Thank you, {0} your phone number is {1}", Textbox1.Text, Textbox2.Text);
+
+            int ss = int.Parse(textboxSS.Text);
+            
+            string result = string.Format("Thank you, {0} your Social Security Number is {1:000-00-0000}", Textbox1.Text,ss);
+
+
+            
+            ResultLabel.Content = result;
+        }
+    }
+}
